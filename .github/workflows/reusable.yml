@@ -20,7 +20,7 @@ jobs:
         run: echo "Hello ${{inputs.who-to-greet}}"
       - name: Set time
         id: time
-        run: echo "time=$(date)" >> $GITHUB_OUTPUT
+        run: echo "time_2=$(date)" >> $GITHUB_OUTPUT
     outputs:
-      current-time: ${{steps.time.outputs.time}}
+      current-time: ${{steps.time.outputs.time_2}}
     
